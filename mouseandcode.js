@@ -92,6 +92,7 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
 
         console.log("QQQQQQQQQQQ");
         await waitForEnter();
+        await selectOkButton(newPage);
         console.log("RRRRRRRRRRR");
 
 
@@ -125,6 +126,7 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
         ////////////////////////////////////////////////////////////////////////////
         console.log("After editIntoSketchFunction");
         await waitForEnter();
+        // await selectOkButton(newPage);
         console.log("Before searchAndClickTransform");
         await searchAndClickTransform(newPage);
         console.log("After searchAndClickTransform");
@@ -149,11 +151,15 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
 
         console.log("UUUUUUUUUUU");
         await waitForEnter();
+        await selectOkButton(newPage)
         console.log("VVVVVVVVVVV");
 
 
         //Working on (6) Sketch 2(1.04)
         ////////////////////////////////////////////////////////////////////////////
+        console.log("UUUUUUUUUUU");
+        await waitForEnter();
+        console.log("VVVVVVVVVVV");
         const selector10 = 'div[data-id="rscxt6ouKl+W1w6N"]'; // Replace with the appropriate selector
         const title10 = '(6) Sketch 2(1.04) did not regenerate properly: Select a sketch plane.<br>1 missing selection';
         console.log('Right-clicking on the specified element.');
@@ -168,11 +174,15 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
 
         console.log("YYYYYYYYYYY");
         await waitForEnter();
+        await selectOkButton(newPage);
         console.log("ZZZZZZZZZZZ");
 
 
         ////////////////////////////////////////////////////////////////////////////
         // WORKING ON NEW CODE
+        console.log("YYYYYYYYYYY");
+        await waitForEnter();
+        console.log("ZZZZZZZZZZZ");
         console.log('Right-clicking on the specified element.');
         const editOptions2 = await performRightClickOptionByTitle(newPage, selector1, title1);
         console.log(editOptions2);
@@ -229,11 +239,15 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
 
         console.log("CCCCCCCCCCC");
         await waitForEnter();
+        await selectOkButton(newPage);
         console.log("DDDDDDDDDDDD");
 
 
         //Working on Fillet 1
         ////////////////////////////////////////////////////////////////////////////
+        console.log("CCCCCCCCCCC");
+        await waitForEnter();
+        console.log("DDDDDDDDDDDD");
         const selector12 = 'div[data-id="S2gcrVk07xQzvvV1"]'; // Replace with the appropriate selector
         const title12 = 'Fillet 1 did not regenerate properly: Select edges or faces to fillet.<br>1 missing selection';
         console.log('Right-clicking on the specified element.');
@@ -248,11 +262,15 @@ require('events').EventEmitter.defaultMaxListeners = 20; // Set the maximum numb
 
         console.log("GGGGGGGGGGG");
         await waitForEnter();
+        await selectOkButton(newPage);
         console.log("HHHHHHHHHHH");
 
 
         //Working on Chamfer 1
         ////////////////////////////////////////////////////////////////////////////
+        console.log("GGGGGGGGGGG");
+        await waitForEnter();
+        console.log("HHHHHHHHHHH");
         const selector13 = 'div[data-id="098TXre2LrwgVvuP"]'; // Replace with the appropriate selector
         const title13 = 'Chamfer 1 did not regenerate properly: Select edges or faces to chamfer.<br>2 missing selections';
         console.log('Right-clicking on the specified element.');
